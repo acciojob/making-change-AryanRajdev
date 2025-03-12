@@ -11,10 +11,10 @@ const makeChange = (c) => {
 	cd = Math.floor(c/10);
 	c = c%10;
 
-	cq = Math.floor(c/5);
+	cn = Math.floor(c/5);
 	c = c%5;
 
-	cq = Math.floor(c/1);
+	cp = Math.floor(c/1);
 	c = c%1;
 
 	let ans = new Object();
@@ -26,6 +26,6 @@ const makeChange = (c) => {
 	return ans;
 };
 
-Do not the change the code below
+//Do not the change the code below
 const c = prompt("Enter c: ");
 alert(JSON.stringify(makeChange(c)));
